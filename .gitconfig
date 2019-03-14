@@ -4,10 +4,10 @@
 [hub]
     protocol = https
 [user]
-    name = Lars Graubner
-    email = mail@larsgraubner.de
+    name = riijagraphics
+    email = riijagraphics@gmail.com
 [credential]
-    username = lgraubner
+    username = riijagraphics
     helper = store
 [color]
     diff = auto
