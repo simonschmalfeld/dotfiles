@@ -17,13 +17,11 @@ fi
 printf "
 ╭───────────────────────────────────────────────────╮
 │                                                   │
-│  ${bold}Lars' dotfiles${normal}                                   │
+│  ${bold}Dotfiles${normal}                         │
 │                                                   │
 │  Bootstrap script to get up and running quickly   │
 │  on MacOS. Safe to run multiple times on the      │
 │  same machine.                                    │
-│                                                   │
-│  ${dim}https://github.com/lgraubner/dotfiles${normal}            │
 │                                                   │
 ╰───────────────────────────────────────────────────╯
 "
