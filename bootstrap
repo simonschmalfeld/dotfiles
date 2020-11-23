@@ -70,14 +70,14 @@ else
 fi
 
 # install composer
-if ! [ -x "$(command -v composer)" ]; then
-	install "Installing Composer"
-	curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+#if ! [ -x "$(command -v composer)" ]; then
+#	install "Installing Composer"
+#	curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
-	print_success "Composer installed!"
-else
-	print_success_muted "Composer already installed."
-fi
+#	print_success "Composer installed!"
+#else
+#	print_success_muted "Composer already installed."
+#fi
 
 # install brew formulaes
 if [ -e $cwd/swag/brews ]; then
@@ -120,20 +120,20 @@ fi
 npm completion > /usr/local/etc/bash_completion.d/npm
 
 # @TODO
-RBENV_RUBY_VERSION=`rbenv version`
-if [[ ! "$RBENV_RUBY_VERSION" =~ ^2\.6\.0.* ]]; then
-  chapter "Installing stable Ruby version"
-  install_rbenv_ruby
-fi
+#RBENV_RUBY_VERSION=`rbenv version`
+#if [[ ! "$RBENV_RUBY_VERSION" =~ ^2\.6\.0.* ]]; then
+#  chapter "Installing stable Ruby version"
+#  install_rbenv_ruby
+#fi
 
 # install ruby gems
-if [ -e $cwd/swag/gems ]; then
-	chapter "Installing ruby gems"
+#if [ -e $cwd/swag/gems ]; then
+#	chapter "Installing ruby gems"
 
-  for gem in $(<$cwd/swag/gems); do
-	    install_ruby_gems $gem
-	done
-fi
+#  for gem in $(<$cwd/swag/gems); do
+#	    install_ruby_gems $gem
+#	done
+#fi
 
 # symlink files
 chapter "Linking dotfiles"
